@@ -1,7 +1,7 @@
 module top_module (
     input clk,
     input w, R, E, L,
-    output Q
+    output Q, Q_bar
 );
     always @(posedge clk)begin
         case({E,L})
@@ -11,6 +11,8 @@ module top_module (
             2'b11: Q <= R ;
         endcase
     end
+    
+    assign Q_bar = ~Q ;
     
 
 endmodule
