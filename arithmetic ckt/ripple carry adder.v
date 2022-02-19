@@ -5,8 +5,8 @@
 module top_module( 
     input [2:0] a, b,
     input cin,
-    output [2:0] cout,
     output [2:0] sum );
+    wire [2:0] cout,
     
     FA f1 (a[0],b[0],cin,sum[0],cout[0]);
     FA f2 (a[1],b[1],cout[0],sum[1],cout[1]);
