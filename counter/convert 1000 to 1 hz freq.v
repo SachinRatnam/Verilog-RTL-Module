@@ -13,7 +13,7 @@ module convert(
 endmodule
 
 
-module bcd_counter (
+module decade_counter (
     input clk,
     input reset,        // Synchronous active-high reset
     output reg [3:0] q);
