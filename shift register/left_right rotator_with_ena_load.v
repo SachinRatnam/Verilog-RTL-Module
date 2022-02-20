@@ -8,7 +8,7 @@
 // 2'b00 and 2'b11 do not rotate.
 // q: The contents of the rotator.
 
-module top_module(
+module rotator(
     input clk,
     input load,
     input [1:0] ena,
