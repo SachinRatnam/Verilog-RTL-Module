@@ -1,6 +1,6 @@
 // implemented with moore style
 
-module edge_detecot1(
+module edge_detector(
     input x,                // input
     input clk,
     input reset,
