@@ -1,4 +1,5 @@
 // implemented with moore style
+// positive edge (0 to 1) detector
 
 module edge_detector(
     input x,                // input
