@@ -1,3 +1,5 @@
+// Incorrect code
+
 module top_module(
     input clk,
     input in,
@@ -5,7 +7,7 @@ module top_module(
     output done
 ); 
     parameter rst= 0,d_cnt= 1,dn= 2,err= 3;
-    reg [2:0]cnt;
+    reg [3:0]cnt;
     
     reg [1:0]state, next_state ;
     
