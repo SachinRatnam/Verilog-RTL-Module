@@ -44,9 +44,9 @@ module seq_1010_overlap(
 				S1: next_state = x ? S1 : S2 ;
 				S2: next_state = x ? S3 : S0 ;
 				S3: begin 
-						next_state = S0 ;
-						z = x ? 1'b0:1'b1 ;
-						end
+					next_state = x ? S1 : S0 ;
+					z = x ? 1'b0:1'b1 ;
+					end
 				endcase
 				
 		end
