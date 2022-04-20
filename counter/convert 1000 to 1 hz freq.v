@@ -8,7 +8,7 @@ module convert(
     bcd_counter C2 (q_in[3],reset,q_in[7:4]);       // all ff in C2 in given clk as q_in[3] which is output of 1st bcd_counter C1, output of C2-- q_in[7] will have feq (in_clk / 100 ) 
     bcd_counter C2 (q_in[7],reset,q_in[11:8]);
     
-    assign out_clk = q_in;
+    assign out_clk = q_in[11];
     
 endmodule
 
