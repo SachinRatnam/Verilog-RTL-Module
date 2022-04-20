@@ -6,7 +6,7 @@ module top_module (
     output [3:0] q);
     
     always @(posedge clk)begin
-        if(reset)
+        if(reset || q == 9)
             q <= 0;
         else
             begin
