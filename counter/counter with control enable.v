@@ -3,7 +3,7 @@
 
 module top_module (
     input clk, slowena, reset,
-    output [3:0] q);
+    output reg [3:0] q);
     
     always @(posedge clk)begin
         if(reset || q == 9)
