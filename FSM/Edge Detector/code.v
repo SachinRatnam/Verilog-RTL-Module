@@ -10,7 +10,7 @@ module edge_detector(
 	 
 	 parameter zero= 0, one_1 = 1, one_0 = 2;  // state name 
 	 
-	 reg [2:0] state, next_state ;
+	reg [1:0] state, next_state ;
 	 
     // clock control
 	 always @(posedge clk)begin
