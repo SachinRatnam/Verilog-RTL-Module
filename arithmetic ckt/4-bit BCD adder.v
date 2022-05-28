@@ -10,9 +10,8 @@ module bcd_adder(
         sum_int = a + b + cin ;
         if(sum_int > 9)
             begin
-               sum_int = sum_int + 4'd6 ;
-               cout = 1'b1;
-                sum = sum_int[3:0]; 
+               sum = sum_int + 4'd6 ;
+               cout = 1'b1; 
             end
         else
             begin
