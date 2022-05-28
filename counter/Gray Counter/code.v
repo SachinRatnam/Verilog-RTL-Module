@@ -27,7 +27,7 @@ module a(clk,reset,gray_count);
 		if(reset)
 			count <= 0 ;
 		else
-			count = count + 1;
+			count <= count + 1;
 	end
 	
 	assign gray_count = count ^ count >> 1 ;
