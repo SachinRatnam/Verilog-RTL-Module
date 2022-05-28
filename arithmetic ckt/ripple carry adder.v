@@ -5,12 +5,14 @@
 module top_module( 
     input [2:0] a, b,
     input cin,
-    output [2:0] sum );
-    wire [2:0] cout,
+    output [2:0] sum 
+    output cout);
     
-    FA f1 (a[0],b[0],cin,sum[0],cout[0]);
-    FA f2 (a[1],b[1],cout[0],sum[1],cout[1]);
-    FA f3 (a[2],b[2],cout[1],sum[2],cout[2]);
+    wire [1:0] c_temp,
+    
+    FA f1 (a[0],b[0],cin,sum[0],c_temp[0]);
+    FA f2 (a[1],b[1],c_temp[0],sum[1],c_temp[1]);
+    FA f3 (a[2],b[2],c_temp[1],sum[2],cout);
     
 
 endmodule
