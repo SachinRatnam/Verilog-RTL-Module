@@ -5,7 +5,7 @@ module top_module (
     
     always @(*)
         if (ena)
-            q = d ; // non blocking assignment is used as it is not triggerd by clock
+            q = d ;
 
 endmodule
 
