@@ -6,10 +6,7 @@
 // If both the load and ena inputs are asserted (1), the load input has higher priority.
 
 module shift_register(
-    input clk,
-    input areset,  // async active-high reset to zero
-    input load,
-    input ena,
+    input clk,areset,load,ena,
     input [3:0] data,
     output reg [3:0] q); 
     
