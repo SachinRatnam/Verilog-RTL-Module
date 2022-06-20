@@ -1,4 +1,4 @@
-module main( binary,gray );
+module g_to_b( binary,gray );
 	 input [3:0] gray;
 	 output [3:0] binary;
 	 
