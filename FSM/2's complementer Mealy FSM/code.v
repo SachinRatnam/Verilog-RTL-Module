@@ -4,7 +4,7 @@ module top_module (
     input x,
     output reg z
 ); 
-    parameter S0=0, S1= 1;
+    parameter S0=0, S1= 1; // Binary Encoding
     reg state, next_state ;
     
     always @(posedge clk,posedge areset)begin
