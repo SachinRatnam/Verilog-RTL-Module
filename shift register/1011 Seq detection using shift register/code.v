@@ -16,3 +16,6 @@ module main(x,clk,reset,z
 
 
 endmodule
+
+// output is synchronous w. r. t. clock
+// this module will detect 1011 seq with overlapping
